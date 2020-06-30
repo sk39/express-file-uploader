@@ -22,7 +22,7 @@ app.use('/api', api)
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`File upload servr listening on port ${port}!`)
+    console.log(`File upload server listening on port ${port}!`)
 })
 
 
