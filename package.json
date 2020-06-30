@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "ts-node index.ts",
-    "clear": "rm -rf uploads",
+    "clear": "rimraf uploads",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.6",
-    "@types/node": "^14.0.14"
+    "@types/node": "^14.0.14",
+    "rimraf": "^3.0.2"
   }
 }
