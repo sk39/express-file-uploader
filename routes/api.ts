@@ -30,7 +30,7 @@ router.post('/upload', upload.fields([{name: 'file'}]), (req: any, res, next) =>
 
 router.get('/download/:filename', function (req, res, next) {
     const filePath = `./uploads/${req.params.filename}`
-    const absPath = path.join(global["appRoot"] , filePath);
+    const absPath = path.join(global["appRoot"], filePath);
     res.download(absPath);
 });
 
